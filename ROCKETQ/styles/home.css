@@ -1,0 +1,54 @@
+.content{
+    display: grid;
+    /* Criando as colunas da aplicação (Divisão img x conteúdo) */
+    grid-template-columns: 60% 40%;
+    /* Criando a linha de separação img x topo e img x end */ 
+    /* fr significa fração, basicamente é dividir em blocos. 1fr é 100% pois é 1 bloco do que sobrar*/
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas: 
+    'header header'
+    'left right'
+}
+
+header{
+    grid-area: header;
+
+}
+
+/* Setando a imagem no grid da esquerda */
+#bg{
+    grid-area: left;
+    /* No-repeat = Não repetir as imagens | top/contain = colocar a imagem no topo do grid, tamanho completo e dentro do espaço da grid */
+    background: url('../assets/home-bg-img.svg') no-repeat top/contain;
+}
+
+main{
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+}
+
+main .container{
+    width: min(36.3rem 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20px,5vw,2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+input{
+    border: 0.2rem solid var(--grey-blue) ;
+    padding: 0 1.6rem;
+}
+
+input,button,.button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+
+
+}

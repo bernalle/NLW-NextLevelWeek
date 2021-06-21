@@ -84,3 +84,57 @@ input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         margin: 0;
 }
+
+/* INPUT and BUTTONS */
+input, button, .button{
+    border-radius: 0.8rem;
+    height: 5rem; 
+}
+
+button, .button{
+    font-family: 'Poppins';
+    font-weight: 500;
+    /* line-height ==> Espaçamento entre as linhas do texto */
+    line-height: 0;
+
+    display: flex;
+    /* Alinhar verticalmente e horizontalmente respectivamente */
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    /* O cursor fica uma mãozinha quando em cima do botton */
+    cursor: pointer;
+}
+
+button:hover, .button:hover{
+    /* Aplica um brilho onde colocar o filtro, nesse caso, no botton. O brilho aparece quando passa o cursor em cima*/
+    filter: brightness(1.2);
+    /* Transição do brilho, demora 0.2s ou .2s (é a mesma coisa) */
+    transition: filter .2s;
+}
+
+button > img
+.button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+/* HEADER */
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
+}
