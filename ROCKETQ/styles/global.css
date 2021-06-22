@@ -38,6 +38,7 @@ Teste para mostrar porque o REM salva seu tempo
 
 body{ /* vh = View Height = a gente está falando para ele pegar o total da tela => Onde inicia e Onde termina (Abaixo da aba e do pesquisar do browser)  */
    /*Estamos usando o vh pois não teremos barra de rolagem*/
+    display: flex; 
     height:100vh;
     background: var(--background);
 }
