@@ -20,7 +20,7 @@ html{
     
     --grey-dark:#4D5E77;
     --grey-blue:#A1B2CD;
-    --grey-medium:#D3D9E2;
+    --grey-medium:#e5eaf2;
     --grey-light:#E5EAF1;
 
 /*Pixels é forçado, para ser responsivo usar o REM=16px (User Agent = pré CSS pronto do navegador) */
@@ -117,7 +117,7 @@ button:hover, .button:hover{
     transition: filter .2s;
 }
 
-button > img
+button > img,
 .button > img{
     margin-right: 1rem;
     width: 2rem;
@@ -128,6 +128,18 @@ button.outlined,
     background: var(--white);
     color: var(--blue);
     border: .2rem solid var(--blue);
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
 }
 
 /* HEADER */
