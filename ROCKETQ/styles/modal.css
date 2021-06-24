@@ -1,3 +1,9 @@
+/* Serve para o JS fazer aparecer a modal */
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
+
 .modal-wrapper{
     position: fixed;
     width: 100vw;
@@ -8,6 +14,11 @@
 
 /* RGBA já inclui a opacidade|transparência */
     background: rgba(4, 9, 17, .8);
+
+/* Os dois fazem a mesma coisa, estamos usando os dois pois se caso um navegador não aceite um deles.
+ O papel das duas é esconder o elemento, e não apagr igual o display:none;*/
+    visibility: hidden;
+    opacity: 0;
 }
 
 .modal-wrapper .modal{
