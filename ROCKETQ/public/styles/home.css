@@ -20,7 +20,7 @@ header{
 #bg{
     grid-area: left;
     /* No-repeat = Não repetir as imagens | top/contain = colocar a imagem no topo do grid, tamanho completo e dentro do espaço da grid */
-    background: url('../assets/home-bg-img.svg') no-repeat top/contain;
+    background: url('../images/home-bg-img.svg') no-repeat top/contain;
     background-position-x: -4rem;
 }
 /* Se for mudar a posição de uma imagem, usar o background-position, pois o margin-left desloca a própria div */
