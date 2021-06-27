@@ -16,6 +16,8 @@ server.use(express.static("public"))
 // arquivo está, ou seja , dirname==src/. Enfim, é a mesma coisa que escrever o caminho relativo 
 server.set('views', path.join(__dirname, 'views'))
 
+server.use(express.urlencoded({extended: true}))
+
 
 server.use(route)
 
