@@ -18,10 +18,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Após instalar o nodejs, baixe os seguintes pacotes na aplicação:
 
 $ npm init -y
+
 $ npm install ejs
+
 $ npm install express
+
 $ npm install nodemon -D
+
 $ npm install sqlite
+
 $ npm install sqlite3
 
 <h2 align="center">Para rodar o código</h2>
